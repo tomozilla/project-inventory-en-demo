@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project inventory (sample)</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 0; background: #f6f7f8; color: #1c1c1c; }
+  main { max-width: 980px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .sub { color: #555; font-size: 14px; margin-bottom: 16px; }
+  .card { background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+  textarea { width: 100%; box-sizing: border-box; height: 110px; font-family: ui-monospace, monospace; font-size: 12px; }
+  button { padding: 6px 12px; font-size: 14px; margin-right: 8px; }
+  table { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 14px; margin-top: 8px; }
+  th, td { text-align: left; padding: 5px 6px; border-bottom: 1px solid #eee; }
+  .org h2 { font-size: 16px; margin: 0; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .tag { background: #fff4e5; border: 1px solid #f0c27b; border-radius: 4px; padding: 0 6px; font-size: 12px; margin-right: 4px; }
+  .tag.old { background: #fdecea; border-color: #e5a29b; }
+  .warn { background: #fff4e5; border: 1px solid #f0c27b; padding: 8px 10px; border-radius: 6px; font-size: 13px; margin: 8px 0; }
+  .err { background: #fdecea; border-color: #e5a29b; }
+  .foot { font-size: 12px; color: #666; }
+  select { font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Project inventory (sample)</h1>
+  <div class="sub">Paste the output of <code>supabase projects list --output json</code>. See which organization holds what, which projects are paused, and a rough monthly cost per organization. Nothing leaves your browser.</div>
+  <section class="card">
+    <textarea id="input" placeholder='{"projects":[ ... ]}' spellcheck="false"></textarea>
+    <div style="margin-top:8px"><button id="load-sample">Load sample data</button><button id="clear">Clear</button></div>
+    <div id="msg"></div>
+  </section>
+  <div id="board"></div>
+  <div class="foot">The CLI output has no plan and no "last used" date. Choose each organization's plan yourself. "Dormant candidate" = paused and at least 90 days old: a prompt to look, not proof that nobody uses it. Cost is a rough estimate (plan fee + $10 per active project - $10 included; see the article for the date of these prices).</div>
+</main>
+<script src="inventory.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

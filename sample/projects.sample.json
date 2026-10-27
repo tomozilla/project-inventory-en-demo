@@ -1,0 +1,10 @@
+{
+  "projects": [
+    { "ref": "aaaaaaaaaaaaaaaaaaaa", "name": "sales-dashboard", "organization_id": "org-a", "region": "ap-northeast-1", "created_at": "2026-08-12T02:00:00Z", "status": "ACTIVE_HEALTHY" },
+    { "ref": "bbbbbbbbbbbbbbbbbbbb", "name": "legacy-poc", "organization_id": "org-a", "region": "ap-northeast-1", "created_at": "2026-03-12T02:00:00Z", "status": "INACTIVE" },
+    { "ref": "cccccccccccccccccccc", "name": "customer-portal", "organization_id": "org-b", "region": "ap-northeast-1", "created_at": "2026-05-01T02:00:00Z", "status": "ACTIVE_HEALTHY" },
+    { "ref": "dddddddddddddddddddd", "name": "customer-portal-staging", "organization_id": "org-b", "region": "ap-northeast-1", "created_at": "2026-06-01T02:00:00Z", "status": "ACTIVE_HEALTHY" },
+    { "ref": "eeeeeeeeeeeeeeeeeeee", "name": "internal-wiki-search", "organization_id": "org-b", "region": "us-east-1", "created_at": "2026-07-20T02:00:00Z", "status": "ACTIVE_HEALTHY" },
+    { "ref": "ffffffffffffffffffff", "name": "new-experiment", "organization_id": "org-c", "region": "us-east-1", "created_at": "2026-10-05T02:00:00Z", "status": "INACTIVE" }
+  ]
+}
