@@ -4,7 +4,7 @@ A small learning demo: paste the output of `supabase projects list --output json
 
 > **A personal learning project.** Not an official tool of any company. The rules (what counts as a "dormant candidate", the cost estimate) are my own reading of the docs and pricing page.
 
-This is the code for the Dev.to article (organizations vs projects, a real project transfer, and this board): TODO-DEVTO-URL
+This is the code for the Dev.to article (organizations vs projects, a real project transfer, and this board): https://dev.to/tomozilla/organizations-vs-projects-in-supabase-move-a-project-between-orgs-audit-dormant-ones-and-build-a-bgf
 
 ## Files
 
